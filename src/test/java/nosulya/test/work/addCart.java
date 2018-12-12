@@ -40,4 +40,13 @@ public class addCart {
          $(By.className("cart-title")).shouldHave(text("Вы добавили товар в корзину"));
 
     }
+
+    @Test
+    public void ClickLogo() {
+        $(By.linkText ("Гарантия")).click();
+        $(By.className("logo")).click();
+        $(By.tagName("title")).shouldHave(text("Интернет-магазин ROZETKA™: фототехника, видеотехника, аудиотехника, компьютеры и компьютерные комплектующие"));
+
+    }
+
 }
